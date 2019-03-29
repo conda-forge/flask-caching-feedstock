@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About flask-caching
 ===================
 
@@ -18,8 +14,14 @@ Summary: Adds caching support to your Flask application
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/flask-caching-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/flask-caching-feedstock)
+
+<table><tr>
+    <td>All platforms:</td>
+    <td>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
