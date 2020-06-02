@@ -1,18 +1,18 @@
 {% set name = "Flask-Caching" %}
-{% set version = "1.7.1" %}
+{% set version = "1.9.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cc25b0800fb0ae4e3fcaaf12203263c564f41197593283669b81216089803a1b
+  sha256: a0356ad868b1d8ec2d0e675a6fe891c41303128f8904d5d79e180d8b3f952aff
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
