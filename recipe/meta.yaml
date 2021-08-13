@@ -1,18 +1,18 @@
 {% set name = "Flask-Caching" %}
-{% set version = "1.7.1" %}
+{% set version = "1.10.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cc25b0800fb0ae4e3fcaaf12203263c564f41197593283669b81216089803a1b
+  sha256: cf19b722fcebc2ba03e4ae7c55b532ed53f0cbf683ce36fafe5e881789a01c00
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
@@ -21,7 +21,8 @@ requirements:
   run:
     - python >=3.6
     - flask
-    - werkzeug >=0.12,<2
+    - markupsafe
+    - werkzeug
 
 test:
   imports:
