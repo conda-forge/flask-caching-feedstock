@@ -1,5 +1,5 @@
 {% set name = "Flask-Caching" %}
-{% set version = "1.10.1" %}
+{% set version = "1.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cf19b722fcebc2ba03e4ae7c55b532ed53f0cbf683ce36fafe5e881789a01c00
+  sha256: 28af189e97defb9e39b43ebe197b54a58aaee81bdeb759f46d969c26d7aa7810
 
 build:
   number: 0
@@ -16,11 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - flask
+    - python >=3.7
+    - flask <=2.1.2
+    - cachelib <=0.6.0
     - markupsafe
     - werkzeug
 
@@ -28,6 +29,10 @@ test:
   imports:
     - flask_caching
     - flask_caching.backends
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/sh4nks/flask-caching
