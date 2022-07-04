@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - flask
-    - cachelib
+    - flask <=2.1.2
+    - cachelib <=0.6.0
     - markupsafe
     - werkzeug
 
