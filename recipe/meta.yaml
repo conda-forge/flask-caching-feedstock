@@ -16,11 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - flask
+    - cachelib
     - markupsafe
     - werkzeug
 
@@ -28,6 +29,10 @@ test:
   imports:
     - flask_caching
     - flask_caching.backends
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/sh4nks/flask-caching
