@@ -1,11 +1,11 @@
-About flask-caching
-===================
+About flask-caching-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-caching-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sh4nks/flask-caching
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-caching-feedstock/blob/main/LICENSE.txt)
 
 Summary: Adds caching support to your Flask application
 
