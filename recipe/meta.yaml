@@ -16,15 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - flask
-    - cachelib >=0.9.0, <0.10
-    - markupsafe
-    - werkzeug
+    - cachelib >=0.9.0,<0.10
 
 test:
   imports:
@@ -33,6 +31,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
