@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - flask
-    - cachelib >=0.9.0,<0.10
+    - cachelib >=0.9.0
 
 test:
   imports:
