@@ -1,13 +1,13 @@
 {% set name = "Flask-Caching" %}
-{% set version = "2.4.1" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
-  sha256: ecef4ca80b9cb1fa01d461373a0fce441527cd57eecee1aa71c1f6d750d7ff77 
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
+  sha256: 5a8779b54695f96e1b4a7a149dd8c6d863433ea66327cde4311ce7fd7b57391f
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
     - flit-core >=3.11,<4
   run:
     - python >={{ python_min }}
-    - flask
-    - cachelib >=0.9.0
+    - flask >=3.0
+    - cachelib >=0.17.0
 
 test:
   imports:
