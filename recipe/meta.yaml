@@ -21,8 +21,8 @@ requirements:
     - flit-core >=3.11,<4
   run:
     - python >={{ python_min }}
-    - flask
-    - cachelib >=0.9.0
+    - flask >=3.0
+    - cachelib >=0.17.0
 
 test:
   imports:
