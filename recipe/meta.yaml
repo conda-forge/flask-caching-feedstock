@@ -1,5 +1,5 @@
 {% set name = "Flask-Caching" %}
-{% set version = "2.5.0" %}
+{% set version = "2.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
-  sha256: 5a8779b54695f96e1b4a7a149dd8c6d863433ea66327cde4311ce7fd7b57391f
+  sha256: f75b451fde3faac0e278da72263818134deca8c4ba6bb07b9b3b238991368dae
 
 build:
   number: 0
